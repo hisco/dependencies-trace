@@ -1,0 +1,36 @@
+{
+  "name": "dependencies-trace",
+  "version": "0.0.2",
+  "description": "",
+  "main": "src/dependencies-trace.js",
+  "types": "src/dependencies-trace.d.ts",
+  "scripts": {
+    "test": "mocha --recursive --reporter spec",
+    "watch-test": "mocha --recursive --watch --reporter spec",
+    "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha test/**/*.js --report lcovonly -- -R spec && cat ./coverage/lcov.info"
+  },
+  "devDependencies": {
+    "mocha": "6.1.4",
+    "chai": "4.2.0",
+    "chai-spies": "1.0.0",
+    "istanbul": "0.4.5"
+  },
+  "keywords": [
+    "regex",
+    "regular expression",
+    "regexp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisco/dependencies-trace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hisco/dependencies-trace/issues"
+  },
+  "homepage": "https://github.com/hisco",
+  "author": "Eyald <hisco@googlegroups.com‬>",
+  "license": "MIT",
+  "dependencies": {
+    "create-regex": "0.0.2"
+  }
+}
